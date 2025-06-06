@@ -18,13 +18,17 @@ sudo apt install build-essential cmake ninja-build git python3 python3-pip libss
 
 ---
 
-### Python packages (for visualization)
-read README in plots directory.
-../plots/README.md
+
+### Clone Github
+```bash
+git clone (this Repository)
+cd (in this Repository)
+```
+
 
 ---
 
-### Build liboqs locally
+### Build liboqs locally in this repository
 ```bash
 git clone --recursive https://github.com/open-quantum-safe/liboqs.git
 cd liboqs
@@ -156,7 +160,8 @@ Each run creates a result folder in:
 ---
 
 ### Visualizing Results
-see README.MD in ./plots
+read README in plots directory.
+../plots/README.md
 
 --- 
 ```
