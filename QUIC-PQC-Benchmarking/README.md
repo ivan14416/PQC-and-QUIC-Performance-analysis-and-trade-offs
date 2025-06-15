@@ -9,7 +9,7 @@ This repository demonstrates how to build OpenSSL 3.5.0 with QUIC support, add 
 3. [Build the OQS-Provider](#build-the-oqsprovider)
 4. [Configure OpenSSL to load the OQS-Provider](#configure-openssl-to-load-the-oqs-provider)
 5. [Usage](#usage)
-6. [Measure handshake RTT script](#measure-handshake-rtt-script)
+6. [Measure handshake RTT with script for benchmarking](#measure-handshake-rtt-with-script-for-benchmarking)
 
 ---
 ## Prerequisites
@@ -124,7 +124,7 @@ cd demos/quic/server && make
 ```
 
 ---
-## Measure handshake RTT script
+## Measure handshake RTT with script for benchmarking
 
 The helper script **`measure-handshake.sh`** lets you run multiple connections for benchmarking handshake latency.
 
