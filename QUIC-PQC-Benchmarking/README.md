@@ -1,6 +1,6 @@
 # Post‑Quantum QUIC Demo with **OpenSSL 3.5.0** & **OQS‑Provider**
 
-This repository demonstrates how to build OpenSSL 3.5.0 with QUIC support, add the [Open Quantum Safe](https://openquantumsafe.org) *oqs‑provider* for post‑quantum algorithms, and run the bundled QUIC demo using PQC algorithms.
+This repository demonstrates how to build OpenSSL 3.5.0 with QUIC support, add the [Open Quantum Safe](https://openquantumsafe.org) *oqs‑provider* for post‑quantum algorithms, and run the bundled QUIC demo using PQC algorithms only on **Linux** devices.
 
 ---
 ## Table of Contents
