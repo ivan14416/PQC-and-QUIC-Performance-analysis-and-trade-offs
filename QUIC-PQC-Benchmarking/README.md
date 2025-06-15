@@ -5,15 +5,11 @@ This repository demonstrates how to build OpenSSL 3.5.0 with QUIC support, add 
 ---
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
-2. [Build & Install OpenSSL 3.5.0](#build--install-openssl-350)
+2. [Build & Install OpenSSL 3.5.0](#build-&-install-openssl-3.5.0)
 3. [Build the OQS‑Provider](#build-the-oqs-provider)
 4. [Configure OpenSSL to load the OQS‑Provider](#configure-openssl-to-load-the-oqs-provider)
 5. [Usage](#usage)
-   * [Generate a certificate](#1-generate-a-certificate)
-   * [Run the QUIC server](#2-run-the-quic-server)
-   * [Run the QUIC client](#3-run-the-quic-client)
-   * [Change key‑exchange groups](#4-change-key-exchange-algorithms)
-6. [Troubleshooting](#troubleshooting)
+6. [Measure handshake RTT script](#measure-handshake-rtt-script)
 
 ---
 ## Prerequisites
@@ -126,3 +122,30 @@ Replace the group list string, then rebuild the server:
 ```bash
 cd demos/quic/server && make
 ```
+
+---
+## Measure handshake RTT script
+
+The helper script **`measure-handshake.sh`** lets you run multiple connections for benchmarking handshake latency.
+
+```text
+usage: ./measure-handshake.sh
+```
+Inside the script, the following variables need to be set:
+| Variable       | Description                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| **OUTFILE**    | File name where RTT values (ms) are being written                                           |
+| **OPENSSL_BIN**| Absolute path to the *openssl* binary you built in the previous steps                        |
+| **SERVER**     | Target server in `host:port` format, e.g. `localhost:4433`                                   |
+| **COUNT**      | Number of handshake iterations to perform                                                   |
+| **KEY_EXCHANGE** | *(optional)* Colon‑separated group list passed via `-groups`, e.g. `x25519:MLKEM512`        |
+
+### Example: 1 000 ML‑KEM‑512 handshakes
+```bash
+OUTFILE=handshake_rtt.txt
+OPENSSL_BIN=$HOME/openssl-3.5.0/apps/openssl
+SERVER=localhost:4433
+COUNT=1000
+KEY_EXCHANGE=MLKEM512
+```
+After the script finishes you’ll have `handshake_rtt.txt` with 1 000 RTT values (ms).
