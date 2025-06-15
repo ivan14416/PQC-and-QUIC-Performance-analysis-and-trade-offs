@@ -5,9 +5,9 @@ This repository demonstrates how to build OpenSSL 3.5.0 with QUIC support, add 
 ---
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
-2. [Build & Install OpenSSL 3.5.0](#build-&-install-openssl-3.5.0)
-3. [Build the OQS‑Provider](#build-the-oqs-provider)
-4. [Configure OpenSSL to load the OQS‑Provider](#configure-openssl-to-load-the-oqs-provider)
+2. [Build and Install OpenSSL 3.5.0](#build-and-install-openssl-350)
+3. [Build the OQS-Provider](#build-the-oqsprovider)
+4. [Configure OpenSSL to load the OQS-Provider](#configure-openssl-to-load-the-oqs-provider)
 5. [Usage](#usage)
 6. [Measure handshake RTT script](#measure-handshake-rtt-script)
 
@@ -19,7 +19,7 @@ sudo apt install -y build-essential cmake ninja-build git
 ```
 
 ---
-## Build & Install OpenSSL 3.5.0
+## Build and Install OpenSSL 3.5.0
 1. Enter the root folder OpenSSL 3.5.0 after cloning this repository:
    ```bash
    cd openssl-3.5.0
@@ -54,7 +54,7 @@ _build/lib/oqsprovider.so
 Note the absolute path, you will reference it in the **Configure** step below.
 
 ---
-## Configure OpenSSL to load the OQS‑Provider
+## Configure OpenSSL to load the OQS-Provider
 1. Locate the active *openssl.cnf* used by your new OpenSSL build:
    ```bash
    <ROOT_DIR_TO_OPENSSL-3.5.0>/apps/openssl version -d
