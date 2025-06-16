@@ -1,0 +1,5 @@
+Algorithm: Falcon-padded-512
+PublicKeyBytes: 897
+SecretKeyBytes: 1281
+SignatureBytes: 666
+Repeat: 1000

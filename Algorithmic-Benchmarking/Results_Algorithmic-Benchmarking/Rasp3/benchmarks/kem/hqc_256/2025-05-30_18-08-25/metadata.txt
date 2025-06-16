@@ -1,0 +1,6 @@
+Algorithm: HQC-256
+PublicKeyBytes: 7245
+SecretKeyBytes: 7317
+CiphertextBytes: 14421
+SharedSecretBytes: 64
+Repeat: 1000

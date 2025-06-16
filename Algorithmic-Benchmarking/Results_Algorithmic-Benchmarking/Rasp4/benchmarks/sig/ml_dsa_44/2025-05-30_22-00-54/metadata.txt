@@ -1,0 +1,5 @@
+Algorithm: ML-DSA-44
+PublicKeyBytes: 1312
+SecretKeyBytes: 2560
+SignatureBytes: 2420
+Repeat: 1000

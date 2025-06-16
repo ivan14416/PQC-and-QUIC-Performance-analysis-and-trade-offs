@@ -1,0 +1,5 @@
+Algorithm: ML-DSA-87
+PublicKeyBytes: 2592
+SecretKeyBytes: 4896
+SignatureBytes: 4627
+Repeat: 1000

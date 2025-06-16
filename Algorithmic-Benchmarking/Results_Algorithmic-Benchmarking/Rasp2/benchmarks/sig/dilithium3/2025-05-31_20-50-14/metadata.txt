@@ -1,0 +1,5 @@
+Algorithm: Dilithium3
+PublicKeyBytes: 1952
+SecretKeyBytes: 4000
+SignatureBytes: 3293
+Repeat: 1000

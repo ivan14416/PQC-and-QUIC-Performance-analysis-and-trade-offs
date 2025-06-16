@@ -1,0 +1,6 @@
+Algorithm: ML-KEM-768
+PublicKeyBytes: 1184
+SecretKeyBytes: 2400
+CiphertextBytes: 1088
+SharedSecretBytes: 32
+Repeat: 1000

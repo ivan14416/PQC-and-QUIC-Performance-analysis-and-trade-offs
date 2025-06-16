@@ -1,0 +1,6 @@
+Algorithm: Kyber512
+PublicKeyBytes: 800
+SecretKeyBytes: 1632
+CiphertextBytes: 768
+SharedSecretBytes: 32
+Repeat: 1000

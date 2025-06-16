@@ -1,0 +1,5 @@
+Algorithm: ML-DSA-65
+PublicKeyBytes: 1952
+SecretKeyBytes: 4032
+SignatureBytes: 3309
+Repeat: 1000

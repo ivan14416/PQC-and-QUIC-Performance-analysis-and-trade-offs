@@ -1,0 +1,4 @@
+Operation,Metric,Average,Min,Max,Variance,Sigma
+keygen,us,4771.85,4513.94,86049.88,6634627.35,2575.78
+encaps,us,5025.71,4840.94,6413.92,24156.50,155.42
+decaps,us,5980.44,5757.93,7687.90,25758.75,160.50

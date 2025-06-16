@@ -1,0 +1,7 @@
+Operation,Metric,Average,Min,Max,Variance,Sigma
+keygen,us,763830.13,241940.32,3536739.23,244746051447.59,494718.15
+keygen,cycles,0,0,0,0,0
+sign,us,109243.51,93315.95,210255.63,1009284549.17,31769.24
+sign,cycles,0,0,0,0,0
+verify,us,3359.56,2808.97,13394.85,4086185.94,2021.43
+verify,cycles,0,0,0,0,0
